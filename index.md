@@ -28,6 +28,17 @@ layout: default
     {% endif %}
   {% endfor %}
 </ul>
+# C
+## 茶香清冽
+<ul>
+  {% for post in site.posts %}
+    {% if post.title contains 'by 茶香清冽' %}
+      <li>
+        <a href="{{ post.url }}">{{ post.title }}</a>
+      </li>
+    {% endif %}
+  {% endfor %}
+</ul>
 # E
 ## erten
 <ul>
@@ -118,6 +129,16 @@ layout: default
 <ul>
   {% for post in site.posts %}
     {% if post.title contains 'by 西元楚杨' %}
+      <li>
+        <a href="{{ post.url }}">{{ post.title }}</a>
+      </li>
+    {% endif %}
+  {% endfor %}
+</ul>
+## 血雨探风
+<ul>
+  {% for post in site.posts %}
+    {% if post.title contains 'by 血雨探风' %}
       <li>
         <a href="{{ post.url }}">{{ post.title }}</a>
       </li>
