@@ -166,3 +166,14 @@ layout: default
     {% endif %}
   {% endfor %}
 </ul>
+
+##圖片測試板塊
+<ul>
+  {% for post in site.posts %}
+    {% if post.title contains '圖1' %}
+      <li>
+        <a href="{{ post.url }}">{{ post.title }}</a>
+      </li>
+    {% endif %}
+  {% endfor %}
+</ul>
