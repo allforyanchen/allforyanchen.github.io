@@ -10,7 +10,7 @@ layout: default
 ## 安惜
 <ul>
   {% for post in site.posts %}
-    {% if post.title contains 'by 安惜' %}
+    {% if post.author contains '安惜' %}
       {% if post.tags contains '文' %}
         <li>
           <a href="{{ post.url }}">{{ post.title }}</a>
