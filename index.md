@@ -11,9 +11,11 @@ layout: default
 <ul>
   {% for post in site.posts %}
     {% if post.title contains 'by 安惜' %}
-      <li>
-        <a href="{{ post.url }}">{{ post.title }}</a>
-      </li>
+      {% if post.tags contains '文' %}
+        <li>
+          <a href="{{ post.url }}">{{ post.title }}</a>
+        </li>
+      {% endif %}
     {% endif %}
   {% endfor %}
 </ul>
