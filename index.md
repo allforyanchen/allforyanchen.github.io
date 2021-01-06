@@ -54,7 +54,7 @@ layout: default
 ## 峰岚POH
 <ul>
   {% for post in site.posts %}
-    {% if post.author contains '峰岚POH' %}
+    {% if post.title contains 'by 峰岚POH' %}
       <li>
         <a href="{{ post.url }}">{{ post.title }}</a>
       </li>
@@ -63,7 +63,7 @@ layout: default
 </ul>
 <ul>
   {% for post in site.posts %}
-    {% if post.tags contains '峰岚POH 文' %}
+    {% if post.title contains '峰岚POH的图集' %}
       <li>
         <a href="{{ post.url }}">{{ post.title }}</a>
       </li>
