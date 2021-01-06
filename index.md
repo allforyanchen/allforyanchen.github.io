@@ -50,6 +50,26 @@ layout: default
     {% endif %}
   {% endfor %}
 </ul>
+# F
+## 峰岚POH
+<ul>
+  {% for post in site.posts %}
+    {% if post.author contains '峰岚POH' %}
+      <li>
+        <a href="{{ post.url }}">{{ post.title }}</a>
+      </li>
+    {% endif %}
+  {% endfor %}
+</ul>
+<ul>
+  {% for post in site.posts %}
+    {% if post.tags contains '峰岚POH 文' %}
+      <li>
+        <a href="{{ post.url }}">{{ post.title }}</a>
+      </li>
+    {% endif %}
+  {% endfor %}
+</ul>
 # H
 ## 何事东风
 <ul>
